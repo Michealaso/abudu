@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abudu repair</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="logo">ABUDU REPAIRS</a>
+        <ul class="menu">
+            <li class="item">
+                <a href="#" class="link">Home</a>
+            </li>
+            <li class="item">
+                <a href="#" class="link">About us</a>
+            </li>
+        </ul>
+    </div>
+   <div class="contair">
+    <center>
+        <div class="cir"></div>
+        <input type="button" class="btn" value="Contact us" onclick="openPopup()">
+
+        <div class="popup" id="popup">
+            <h2>Thank You!</h2>
+            <p>Your service will be done straight away. Thanks!</p>
+            <button type="button" onclick="closePopup()">Ok</button>
+        </div>
+
+        <p class="p">Thank You and welcome to our site. <br>
+        Technically we make Repair to Devices such as, <br>
+        Mobile Phones <br>Laptops e.t.c . <br> So, press 
+        that red big button above</p>
+    </center>
+   </div>
+
+   <script>
+    let popup = document.getElementById("popup");
+
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+   </script>
+</body>
+</html>
